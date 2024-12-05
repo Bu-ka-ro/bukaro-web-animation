@@ -1,0 +1,322 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: boarder-box;
+	
+
+}
+
+
+.pic-1 {
+ 	border-radius: 25px;
+ 	margin: center;
+ 	float: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+ 	Height: auto;
+ 	max-width: 100%;
+ 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+ 	transition: box-shadow 0.5s ease-in-out, width 1s ease-in-out;
+
+}
+
+
+.pic-1:hover {
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.9);
+	width: 750px;
+
+}
+
+h1 {
+	text-align: center;
+	padding-top: 20px;
+	color: teal;
+
+}
+
+
+/* Box Model: padding, margin, etc. */
+h3 {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: black;
+
+}
+
+
+body {
+	font-family: "Bellota Text", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+
+nav {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	background-color: teal;
+	padding: 40px;
+
+}
+
+
+/* styles for links in nav. Removes default underline for links */
+nav a {
+	text-decoration: none;
+	color: white;
+
+}
+
+	/*font-size: 20px;
+	font-weight: 600;
+	font-family: "Bellota Text", sans-serif;
+	font-weight: 700;
+	font-style: regular;
+	background-color: #eee;
+	color: teal;
+	border-radius: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px; */
+
+#logo {
+	align-content: center;
+	justify-content: space-between;
+	padding-left: 16px;
+	padding-right: 16px;
+	
+
+
+}
+
+
+/* removes default styling of checkbox */
+input[type="checkbox"] {
+	appearance: none;
+	-webkit-appearance: none;
+
+}
+
+
+label {
+	color: f2f2f2;
+	cursor: pointer;
+	display: none;
+
+}
+
+
+/* container for nav menu */
+.menuc {
+	list-style: none;
+	display: flex;
+	gap: 16px;
+	font-size: 20px;
+	font-weight: bold;
+	align-content: center;
+	justify-content: space-between;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 25px;
+	padding-bottom: 35px;
+	border-radius: 25px;
+	
+}
+
+
+/* editor for nav bar text */
+.menuc a {
+	padding: 8px;
+	transition: 0.5s ease-in-out;
+
+}
+
+
+.menuc a:hover {
+	background-color: #edcdaf;
+	width: 100%;
+	text-shadow: 0 0 1px #f2f2f2, 0 0 1px #f2f2f2;
+	transition: 0.5s;
+	border-radius: 10px;
+	color: teal;
+
+}
+
+
+/* interactive for tablets & smartphones */
+@media only screen and (max-width: 600px) {
+
+	label {
+		display: block;
+	 }
+	
+
+	.menuc {
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		justify-content: center;
+		background-color: teal;
+		text-align: center;
+		gap: 32px;
+		top: 120px;
+		width: 100%;
+		height: calc(100vh - 80px);
+		left: -115%;
+		transition: 0.5s;
+		z-index: 1;
+
+	}
+
+	
+	.menuc a {
+		width: 100%;
+
+	}
+
+
+	input[type="checkbox"]:checked ~ .menuc {
+		left: 0;
+
+	}
+
+
+	.pic-1 {
+		width: 350px;
+		margin-top: 20px;
+
+	}
+
+
+	.pic-1:hover {
+		width: 400px;
+
+	}
+
+
+
+}
+/*ends here lol*/
+
+
+/*background animation*/
+.container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	overflow: hidden;
+	top: 0;
+	margin-top: 4%;
+
+}
+
+
+.box div {
+	max-width: 100%;
+	height: 20px;
+	position: absolute;
+	width: 20px;
+	background-color: lightgray;
+	border: .1px solid hsl(0, 0%, 0%);
+	border-radius: 50%;
+
+}
+
+
+.box div:nth-child(1) {
+	top: 30%;
+	left: 4%;
+	animation: move 2s ease-in-out infinite;
+
+}
+
+
+.box div:nth-child(2) {
+	top: 20%;
+	right: 8%;
+	animation: move 4s ease-in-out infinite;
+
+}
+
+
+.box div:nth-child(3) {
+	bottom: 70%;
+	left: 25%;
+	animation: move 6s ease-in-out infinite;
+
+}
+
+
+.box div:nth-child(4) {
+	bottom: 10%;
+	right: 1%;
+	animation: move 8s ease-in-out infinite;
+
+}
+
+
+.box div:nth-child(5) {
+	top: 93%;
+	left: 54%;
+	animation: move 10s ease-in-out infinite;
+
+}
+
+
+.box div:nth-child(6) {
+	top: 65%;
+	right: 2%;
+	animation: move 12s ease-in-out infinite;
+
+}
+
+
+.box div:nth-child(7) {
+	bottom: 37%;
+	left: 40%;
+	animation: move 14s ease-in-out infinite;
+
+}
+
+
+.box div:nth-child(8) {
+	bottom: 11%;
+	right: 7%;
+	animation: move 16s ease-in-out infinite;
+
+}
+
+
+/*percentages is for the keyframes*/
+@keyframes move {
+	0% {
+		transform: scale(0) translate(0) rotate(0deg);
+		 /*translate means position*/
+		opacity: 0;
+
+	}
+
+
+	50% {
+		opacity: 2.5;
+
+	}
+
+
+	100% {
+		transform: scale(3) translate(-100%, 100%) rotate(360deg);
+		opacity: 0.3;
+	}
+
+}
+
+
+
+
+
+
